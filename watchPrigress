@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Advance the progress bar every second until a minute is used up
+# Перемещается индикатор выполнения каждую секунду, пока не будет израсходована минута.
+  for ((i = $(date +%S);i < 60; ++i));
+   do
+    echo -n "#"
+     sleep 1
+   done
